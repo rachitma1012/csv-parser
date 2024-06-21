@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: lightgray;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.navbar h1 span{
+    color: blue;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+    gap: 5px;
+}
+.container .field{
+    width: 264px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    gap: 5px;
+    height: 120px;
+    
+}
+label{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+input{
+    margin-left: 26%;
+}
+button{
+    width: 30%;
+    height: 20%;
+    margin-top: 5px;
+}
+.uploaded{
+    height: 250px;
+    width: 380px;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+    overflow: auto;
+}
+.uploaded .uploaded-file{
+height: 50px;
+width: 95%;
+background:lightblue;
+margin-left: 10px;
+margin-top: 8px;
+border-radius: 5px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.uploaded .uploaded-file p{
+    font-size: 18px;
+    font-weight: 500;
+    color: blue;
+}
+.delete-button{
+    height: auto;
+    width: auto;
+    background: lightblue;
+    border: none;
+    cursor: pointer;
+}
+.delete-button:active{
+    border: none;
+}
+footer{
+    height: 50px;
+    background: lightgrey;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+  .pagination{
+    padding-top: 20px;
+    overflow-x: scroll;
+    height: 150px;
+    display: flex;
+    align-items: centers;
+    width: 100vw;
+    justify-content: center;
+  }
+  .pagination button{
+    height: 30px;
+    width: 100px;
+    background: lightskyblue;
+    margin-left: 5px;
+  }
+  .search-back{
+  height: 61px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+
+  }
+  .search-back form{
+    height:50px;
+    width:400px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .search-back label{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+  }
+
+  .search-back form button{
+    height: 30px;
+    width:50px;
+    margin-left: 1px;
+    position: relative;
+    top: -2px;
+  }
+  .search-back form input{
+    margin-left: 5px;
+    height: 30px;
+    width: 150px;
+  }
+  #for-back{
+    height: 30px;
+    width: 60px;
+    position: relative;
+    top:7px ;
+    right: 30px;
+  }
+  .home-btn-btn{
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  .home-btn-btn button{
+    height: 30px;
+    background: beige;
+    color:black;
+    width: 150px;
+  }
+  .search-item{
+    margin-top: 15px;
+  }
+  .exit-check{
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }

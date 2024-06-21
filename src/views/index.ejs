@@ -1,0 +1,38 @@
+   <!-- for uploading a file through form  -->
+    <div class="container">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="field">
+                <label for="upload">
+                    upload file here
+                </label>
+                <input type="file" id="upload" name="csvFile" accept=".csv">
+            
+            
+            <button>Upload</button>
+        
+    </div>
+        </form>
+        <!-- with the help of ejs data is displayed on the page -->
+        <div class="uploaded">
+            <%if(data.length===0){%>
+                <div class="uploaded-file">
+                <p>No file</p>
+                </div>
+                <% } else { %>
+                <% data.forEach(item => { %>
+                <div class="uploaded-file" id="item-<%=item._id%>">
+                    <a href="/openFile?id=<%=item._id%>" id="id-input" item-id="<%=item._id%>"><%=item.csvFile%></a>
+                
+                        <a href="/" class="delete-button" data-id="<%=item._id%>" onclick="fetchLink(event)">
+                          <img src="delete.png" width="20px">
+                        </a>
+                    
+                      
+                </div>
+                
+            <%})%>
+            <% } %>
+        </div>
+    </div>
+
+    

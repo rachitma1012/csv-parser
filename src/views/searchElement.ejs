@@ -1,0 +1,31 @@
+<div class="home-btn-btn">
+<a href="/"><button >Go to Home Page</button></a>
+</div>
+<table class="search-item">
+
+    <tr>
+        <th>Index</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Company</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Email</th>
+    </tr>
+    <tbody>
+        <% if (data.length > 0) { %>
+          <% data.forEach(item => { %>
+            <tr>
+              <td><%= item['Index'] %></td>
+              <td><%= item['First Name'] %></td>
+              <td><%= item['Last Name'] %></td>
+              <td><%= item['Company'] %></td>
+              <td><%= item['City'] %></td>
+              <td><%= item['Country'] %></td>
+              <td><%= item['Email'] %></td>
+            </tr>
+          <% }) %>
+        <% } %>
+      </tbody>
+    
+</table>
